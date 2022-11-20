@@ -6,7 +6,7 @@ import ru.netology.exception.NotFoundException;
 public class TicketRepository {
     public Ticket[] tickets = new Ticket[0];
 
-    public void addProduct(Ticket ticket) {
+    public void addTicket(Ticket ticket) {
         Ticket[] tmp = new Ticket[tickets.length + 1];
         for (int i = 0; i < tickets.length; i++) {
             tmp[i] = tickets[i];
